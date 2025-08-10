@@ -15,6 +15,9 @@ function generateQuote(event) {
   let context =
     "You are a quote expert. you are tasked with generating a  short quote. Make sure to follow user instructions. Add the author of the quote at the end of the quote wrapped in a <strong></strong> and <br />";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class = "generating"> Generating a quote about ${instructionsInput.value}</div>`;
   axios.get(apiUrl).then(displayQuote);
 }
 

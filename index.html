@@ -12,24 +12,24 @@
     <div class="container">
       <header>AI qoute generator</header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the qoute"
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instructions"
-          /><input type="submit" class="submit-button" />
-        </form>
-        <div class="qoute" id="quote">
-          The qoute will go here
-          <br />
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the qoute"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instructions"
+            /><input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e:love,strenght,passion</div>
         </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
       <footer>
-        THis project was coded by
+        THis AI project was coded by
         <a>Sinethemba Msibi</a>
         and is
         <a
